@@ -162,9 +162,7 @@ POST /api/rest/metrics/generate
 | copy_metrics_by_appliance | 複製效能 |
 
 如果需要用電量資料，替代方案有：
-- **iDRAC**：若 PowerStore controller node 有獨立 iDRAC，可透過 Redfish API 取得
 - **智慧型 PDU**：從機架 PDU 直接抓取整體用電量
-- **SNMP**：PowerStore 的 SNMP 僅支援 Trap（被動通知），不支援主動 poll
 
 ---
 
