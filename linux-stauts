@@ -1,0 +1,9 @@
+$ docker ps
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED        STATUS        P                                             ORTS                                         NAMES
+d8064e1588b6   prom/snmp-exporter:latest                  "/bin/snmp_exporter …"   21 hours ago   Up 21 hours   0                                             .0.0.0:9116->9116/tcp, [::]:9116->9116/tcp   snmp-exporter
+03126a51582b   powerstore-exporter:latest                 "/powerstore_exporte…"   22 hours ago   Up 2 hours    0                                             .0.0.0:9010->9010/tcp, [::]:9010->9010/tcp   powerstore-exporter
+a6fb8976fbd5   prometheuscommunity/ipmi-exporter:latest   "/bin/ipmi_exporter"     24 hours ago   Up 24 hours   0                                             .0.0.0:9290->9290/tcp, [::]:9290->9290/tcp   ipmi-exporter
+90982411d718   prom/prometheus:latest                     "/bin/prometheus --c…"   26 hours ago   Up 26 hours   0                                             .0.0.0:9090->9090/tcp, [::]:9090->9090/tcp   prometheus
+54509ed795cd   grafana/grafana:latest                     "/run.sh"                26 hours ago   Up 26 hours   0                                             .0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   grafana
+a53f1c1fe18f   mrlhansen/idrac_exporter:latest            "/app/entrypoint.sh"     26 hours ago   Up 26 hours   0                                             .0.0.0:9348->9348/tcp, [::]:9348->9348/tcp   idrac-exporter
+
