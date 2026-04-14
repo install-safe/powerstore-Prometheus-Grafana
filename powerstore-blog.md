@@ -52,7 +52,7 @@ Grafana（Port 3000）
 
 ```bash
 # 這樣行不通！
-curl -sk -u admin:'Password123!' \
+curl -sk -u admin:'password' \
   "https://192.168.236.80/api/rest/metrics_query" \
   -H "Accept: application/json"
 ```
@@ -87,7 +87,7 @@ curl -sk -u admin:'Password123!' \
 
 ```bash
 curl -sk -c /tmp/pst_cookie.txt \
-  -u admin:'Password123!' \
+  -u admin:'password' \
   -X GET \
   "https://192.168.236.80/api/rest/appliance?select=id" \
   -H "Accept: application/json" \
